@@ -33,8 +33,9 @@ body {
 	right: 0;
 	bottom: 0;
 	background-image: url("./assets/background/robo-back1.png");
-	background-size: cover;
+/* 	--- for gif paralax --- */
+/* 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 40% 40%; 
+	background-position: 40% 40%;  */
 }
