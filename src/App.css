@@ -32,10 +32,27 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url("./assets/background/robo-back1.png");
+	background-image: url("./assets/background/robo-b.png");
+	background-size: cover;
 /* 	--- for gif paralax --- */
-/* 	background-size: cover;
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 40% 40%;  */
+	background-position: 40% 40%;   */
 }
+
+@media (max-width: 850px) {
+	.moving-background {
+		z-index: -1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("./assets/background/robo-gif-mob.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: 40% 40%;  
+	}
+}
+
