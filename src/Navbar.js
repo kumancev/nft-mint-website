@@ -18,15 +18,15 @@ const Navbar = ({ accounts, setAccounts }) => {
 
   return (
     <Flex justify="space-between" align="center" padding="30px">
-      <Flex justify="space-around" width="40%" padding="0 75px">
+      <Flex direction={{ base: 'column-reverse', md: 'row' }} justify="space-around" width="40%" padding={{lg: "0 75px"}} >
         <Link href="https://www.facebook.com">
-          <Image src={Facebook} boxSize="42px" margin="0 15px" />
+          <Image src={Facebook} boxSize="42px" margin={{md: "0", lg: "0 15px"}}/>
         </Link>
         <Link href="https://www.twitter.com">
-          <Image src={Twitter} boxSize="42px" margin="0 15px" />
+          <Image src={Twitter} boxSize="42px" margin={{md: "0", lg: "0 15px"}} />
         </Link>
         <Link href="https://www.gmail.com">
-          <Image src={Email} boxSize="42px" margin="0 15px" />
+          <Image src={Email} boxSize="42px" margin={{md: "0", lg: "0 15px"}} />
         </Link>
       </Flex>
 
@@ -34,14 +34,14 @@ const Navbar = ({ accounts, setAccounts }) => {
         justify="space-around"
         align="center"
         width="40%"
-        padding="30px 30px 30px 30px"
+        padding={{md: "10px 10px", lg: "30px 30px 30px 30px"}}
       >
-        <Box margin="0 15px">About</Box>
+        <Box margin={{md: "0 5px", lg: "0 15px"}}>About</Box>
         <Spacer />
-        <Box margin="0 15px">Mint</Box> <Spacer />
-        <Box margin="0 15px">Team</Box> <Spacer />
+        <Box margin={{md: "0 5px", lg: "0 15px"}}>Mint</Box> <Spacer />
+        <Box margin={{md: "0 5px", lg: "0 15px"}}>Team</Box> <Spacer />
         {isConnected ? (
-          <Box margin="0 15px">Connected</Box>
+          <Box margin={{md: "0 5px", lg: "0 15px"}}>Connected</Box>
         ) : (
           <Button
             backgroundColor="#D6517D"
@@ -51,7 +51,7 @@ const Navbar = ({ accounts, setAccounts }) => {
             cursor="pointer"
             fontFamily="inherit"
             padding="15px"
-            margin="0 15px"
+            margin={{md: "0 5px", lg: "0 15px"}}
             onClick={connectAccount}
           >
             Connect
